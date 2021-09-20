@@ -1,5 +1,6 @@
 import React from 'react';
 import { Fragment } from 'react';
+import PropTypes from 'prop-types'
 
 const ComponenteProps = (props) => {
     return (
@@ -14,6 +15,13 @@ const ComponenteProps = (props) => {
             <div>{props.componenteReact}</div>
         </Fragment>
     );
+}
+
+ComponenteProps.propTypes = {
+    nombre: PropTypes.string.isRequired,
+    edad: PropTypes.number,
+    casado: PropTypes.bool,
+    arrNums: PropTypes.array
 }
  
 export default ComponenteProps;
