@@ -1,11 +1,14 @@
-import logo from './logo.svg';
+import React from 'react';
 import HolaMundoComponente from './components/HolaMundoComponente.jsx';
-import './App.css';
+import ComponentClase from './components/ComponenteClase';
+import { Fragment } from 'react';
 
 function App() {
   return (
-    <HolaMundoComponente/>
-    
+    <Fragment>
+      <HolaMundoComponente />
+      <ComponentClase mensaje='Esto es un mensaje enviado en las props'/>
+    </Fragment>
   );
 }
 
