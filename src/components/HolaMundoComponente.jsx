@@ -1,9 +1,9 @@
 import React,{Component} from 'react';
 
-class HolaMundoComponent extends Component{
+class HolaMundoComponente extends Component{
     render(){
         return <h2>Hola soy un componente</h2>
     }
 }
 
-export default HolaMundoComponent;
+export default HolaMundoComponente;
