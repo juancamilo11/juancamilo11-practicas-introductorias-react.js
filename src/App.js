@@ -5,7 +5,7 @@ import ComponenteFuncion from './components/ComponenteFuncion.jsx';
 import ComponenteFuncion2 from './components/ComponenteFuncion2.jsx';
 import CompFuncionProps from './components/CompFuncionProps.jsx';
 import CompFuncionProps2 from './components/CompFuncionProps2.jsx';
-
+import ComponenteProps from './components/ComponenteProps.jsx';
 import { Fragment } from 'react';
 
 function App() {
@@ -22,6 +22,8 @@ function App() {
       <CompFuncionProps mensaje='Esto es un mensaje enviado en las props a un componente funcion declarada' />
       <hr />
       <CompFuncionProps2 mensaje='Esto es un mensaje enviado en las props a un componente funcion expresada' />
+      <hr />  
+      <ComponenteProps nombre='Juan Camilo Cardona' edad={22} casado={false} />
       <hr /> 
     </Fragment>
   );
