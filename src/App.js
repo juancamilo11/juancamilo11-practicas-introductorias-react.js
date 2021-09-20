@@ -23,7 +23,15 @@ function App() {
       <hr />
       <CompFuncionProps2 mensaje='Esto es un mensaje enviado en las props a un componente funcion expresada' />
       <hr />  
-      <ComponenteProps nombre='Juan Camilo Cardona' edad={22} casado={false} />
+      <ComponenteProps 
+        nombre='Juan Camilo Cardona' 
+        edad={22} 
+        casado={false}
+        arrNums={[1,2,3,4,5]}
+        contacto= {{nombre: 'Juan',telefono:'311235645'}}
+        elevarCuadrado = {(num) => num * num }
+        componenteReact ={<CompFuncionProps mensaje='Hola soy un componente pasado como props'/>}
+      />
       <hr /> 
     </Fragment>
   );
